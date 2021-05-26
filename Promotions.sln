@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Promotions", "Promotions\Promotions.csproj", "{DCEC26D8-57A5-4395-9B78-6262C85FC8C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromotionsEngine", "PromotionsEngine\PromotionsEngine.csproj", "{0C525C87-8696-4777-AF6C-070675D7EB09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromotionsTest", "PromotionsTest\PromotionsTest.csproj", "{9447D8E1-2D34-493E-ABEC-90B5111100C7}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCEC26D8-57A5-4395-9B78-6262C85FC8C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCEC26D8-57A5-4395-9B78-6262C85FC8C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCEC26D8-57A5-4395-9B78-6262C85FC8C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCEC26D8-57A5-4395-9B78-6262C85FC8C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C525C87-8696-4777-AF6C-070675D7EB09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C525C87-8696-4777-AF6C-070675D7EB09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C525C87-8696-4777-AF6C-070675D7EB09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C525C87-8696-4777-AF6C-070675D7EB09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9447D8E1-2D34-493E-ABEC-90B5111100C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9447D8E1-2D34-493E-ABEC-90B5111100C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9447D8E1-2D34-493E-ABEC-90B5111100C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9447D8E1-2D34-493E-ABEC-90B5111100C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
