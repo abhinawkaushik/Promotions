@@ -1,0 +1,72 @@
+[
+  {
+    "ProductID": "1",
+    "SKUID": "A",
+    "ProductName": "Apple",
+    "Qantity": "100",
+    "Price": "50"
+  },
+  {
+    "ProductID": "2",
+    "SKUID": "B",
+    "ProductName": "Boy",
+    "Qantity": "100",
+    "Price": "30"
+  },
+  {
+    "ProductID": "3",
+    "SKUID": "C",
+    "ProductName": "Cat",
+    "Qantity": "100",
+    "Price": "10"
+  },
+  {
+    "ProductID": "4",
+    "SKUID": "D",
+    "ProductName": "Dog",
+    "Qantity": "100",
+    "Price": "60"
+  },
+  {
+    "ProductID": "5",
+    "SKUID": "E",
+    "ProductName": "Elephant",
+    "Qantity": "100",
+    "Price": "30"
+  },
+  {
+    "ProductID": "6",
+    "SKUID": "F",
+    "ProductName": "Fish",
+    "Qantity": "100",
+    "Price": "500"
+  },
+  {
+    "ProductID": "7",
+    "SKUID": "G",
+    "ProductName": "Goat",
+    "Qantity": "100",
+    "Price": "70"
+  },
+  {
+    "ProductID": "8",
+    "SKUID": "H",
+    "ProductName": "Hourse",
+    "Qantity": "100",
+    "Price": "10"
+  },
+  {
+    "ProductID": "9",
+    "SKUID": "I",
+    "ProductName": "Ice",
+    "Qantity": "100",
+    "Price": "20"
+  },
+  {
+    "ProductID": "10",
+    "SKUID": "J",
+    "ProductName": "Jackle",
+    "Qantity": "100",
+    "Price": "30"
+  }
+]
