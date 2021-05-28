@@ -1,9 +1,9 @@
-﻿using System;
-
+﻿
 namespace PromotionsEngine
 {
     public class ProductMaster
     {
+        string _skuID;
         long _productID;
         string _productName;
         long _quantity;
@@ -12,6 +12,11 @@ namespace PromotionsEngine
         {
             get { return _productID; }
             set { _productID = value; }
+        }
+        public string SKUID
+        {
+            get { return _skuID; }
+            set { _skuID = value; }
         }
         public string ProductName
         {
