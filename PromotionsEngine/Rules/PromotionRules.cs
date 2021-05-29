@@ -4,8 +4,18 @@ using System.Text;
 
 namespace PromotionsEngine.Rules
 {
-    public class PromotionRules
+    public enum PromotionType
     {
-
+        ByProduct = 1,
+        ByMultipleProducts = 2,
+        ByPercent = 3,
+        ByQuantity = 4
+    }
+    public class Promotions
+    {
+        public PromotionType PromotionType;
+        public string SKUID;
+        public string Quantity;
+        public decimal Price;
     }
 }

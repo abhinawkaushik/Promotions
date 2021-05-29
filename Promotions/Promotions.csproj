@@ -51,6 +51,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="ProductList.json" />
+    <None Include="PromotionsRule.json" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PromotionsEngine\PromotionsEngine.csproj">

@@ -18,14 +18,14 @@
     "SKUID": "C",
     "ProductName": "Cat",
     "Qantity": "100",
-    "Price": "10"
+    "Price": "20"
   },
   {
     "ProductID": "4",
     "SKUID": "D",
     "ProductName": "Dog",
     "Qantity": "100",
-    "Price": "60"
+    "Price": "15"
   },
   {
     "ProductID": "5",
