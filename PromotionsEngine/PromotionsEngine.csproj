@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\..\..\TalismaCode\CRM\CRM11.0\Web\WebAccess\Client\bin\Newtonsoft.Json.dll</HintPath>
     </Reference>
