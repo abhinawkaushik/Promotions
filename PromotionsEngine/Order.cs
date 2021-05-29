@@ -13,6 +13,12 @@ namespace PromotionsEngine
         }
         public void AddProductToOrder(ProductMaster product)
         {
+            ProductMaster productMaster = GetOrderById(product.SKUID);
+            if (productMaster != null)
+            {
+                productMaster.Quantity += product.Quantity;
+                RemoveOrderById(product.SKUID);
+            }
             orders.Add(product);
         }
         public List<ProductMaster> GetAllOrder()
@@ -31,6 +37,22 @@ namespace PromotionsEngine
                 }
             }
             return productMaster;
+        }
+        public bool RemoveOrderById(string SKUID)
+        {
+            ProductMaster productMaster = null;
+            bool bSuccess = false;
+            foreach (ProductMaster product in orders)
+            {
+                if (product.SKUID.ToLower() == SKUID.ToLower())
+                {
+                    productMaster = product;
+                    bSuccess = true;
+                    break;
+                }
+            }
+            orders.Remove(productMaster);
+            return bSuccess;
         }
         public List<ProductMaster> ApplyPromotions()
         {

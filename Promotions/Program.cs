@@ -6,15 +6,19 @@ using System.Threading.Tasks;
 using System.Configuration;
 using PromotionsEngine.Models;
 using PromotionsEngine;
+using PromotionsEngine.Rules;
 
 namespace Promotions
 {
     class Program
     {
         static DataSource dataSource;
+        static PromotionManager promotionManager;
         static void Main(string[] args)
         {
             string _url = ConfigurationManager.AppSettings["connectionString"];
+            string _promotions = ConfigurationManager.AppSettings["promotionsRule"];
+            promotionManager = new PromotionManager(_promotions);
             InitDataSource(DataSourceType.FILE, _url);
         }
         static void InitDataSource(DataSourceType dataSourceType, string source)
@@ -72,7 +76,7 @@ namespace Promotions
                         break;
                     case 4:
                         List<ProductMaster> allPromOrers = order.GetAllOrder();
-                        allPromOrers = order.ApplyPromotions();//Apply all the active Promotions
+                        allPromOrers = promotionManager.ApplyPromotion(allPromOrers, order);//Apply all the active Promotions
                         Console.WriteLine("SKUID \t Product Name \t Quantity \t Price");
                         Console.WriteLine("_____________________________________________");
                         foreach (ProductMaster productManager in allPromOrers)
