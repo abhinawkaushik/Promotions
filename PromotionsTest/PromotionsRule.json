@@ -1,0 +1,20 @@
+[
+  {
+    "PromotionType": "1",
+    "SKUID": "A",
+    "Quantity": "3",
+    "Price": "130"
+  },
+  {
+    "PromotionType": "1",
+    "SKUID": "B",
+    "Quantity": "2",
+    "Price": "45"
+  },
+  {
+    "PromotionType": "2",
+    "SKUID": "C,D",
+    "Quantity": "null",
+    "Price": "30"
+  }
+]
