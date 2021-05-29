@@ -7,6 +7,7 @@ using System.Configuration;
 using PromotionsEngine.Models;
 using PromotionsEngine;
 using PromotionsEngine.Rules;
+using System.IO;
 
 namespace Promotions
 {
@@ -16,8 +17,9 @@ namespace Promotions
         static PromotionManager promotionManager;
         static void Main(string[] args)
         {
-            string _url = ConfigurationManager.AppSettings["connectionString"];
-            string _promotions = ConfigurationManager.AppSettings["promotionsRule"];
+            string projectDirectory = Directory.GetParent(Environment.CurrentDirectory).Parent.FullName;
+            string _url = projectDirectory + "\\" + ConfigurationManager.AppSettings["connectionString"];
+            string _promotions = projectDirectory + "\\" + ConfigurationManager.AppSettings["promotionsRule"];
             promotionManager = new PromotionManager(_promotions);
             InitDataSource(DataSourceType.FILE, _url);
         }
