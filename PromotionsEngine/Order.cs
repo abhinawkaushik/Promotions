@@ -38,6 +38,22 @@ namespace PromotionsEngine
             }
             return productMaster;
         }
+        public bool SKUCombinationExists(string SKUIDs)
+        {
+            int count = 0;
+            string[] products = SKUIDs.Split(',');
+            for (int iCount = 0; iCount < products.Length; iCount++)
+            {                
+                foreach (ProductMaster product in orders)
+                {
+                    if (product.SKUID.ToLower() == products[iCount].ToLower())
+                    {
+                        count++;
+                    }
+                }
+            }
+            return products.Length == count;
+        }
         public bool RemoveOrderById(string SKUID)
         {
             ProductMaster productMaster = null;
