@@ -97,10 +97,6 @@ namespace PromotionsEngine.Rules
             }
             return newOrder;
         }
-        public List<ProductMaster> ApplyPromotion(PromotionType promotionType, List<ProductMaster> order)
-        {
-            return order;
-        }
         private ProductMaster ApplyDiscount(string SKUID, Promotions promotions, Order order)
         {
             ProductMaster productMaster = null;
