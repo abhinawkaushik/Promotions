@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using PromotionsEngine.Factory;
 using PromotionsEngine.Interface;
-using PromotionsEngine.Factory;
-using PromotionsEngine;
 using PromotionsEngine.Models;
+using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace Promotions
+namespace PromotionsEngine
 {
     public class DataSource
     {
