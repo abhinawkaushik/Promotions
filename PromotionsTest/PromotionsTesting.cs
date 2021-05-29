@@ -44,7 +44,16 @@ namespace PromotionsTest
             ProductMaster product = order.GetOrderById("A");
 
             Assert.AreEqual(product.SKUID.ToLower(), productMaster.SKUID.ToLower());
-            
+        }
+        [TestMethod]
+        public void CheckProductExists()
+        {
+            //Arrange
+            Order order = new Order();
+            //Act
+            ProductMaster product = order.GetOrderById("PP");
+            //Assert
+            Assert.AreEqual(product, null);
         }
     }
 }
